@@ -1,0 +1,86 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 400px;
+    height: 700px;
+    min-width: 375px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    margin: 50px auto 50px;
+    box-shadow: 4px 4px  hsl(216, 50%, 16%);
+}
+
+.imagen {
+    width: 330px;
+    margin: 25px 15px 15px 35px;
+    border-radius: 10px;
+}
+
+.titulo {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-left: 35px;
+    margin-top: -2px;
+    font-size: 25px;
+    padding: 0;
+}
+
+.texto {
+    color: hsl(178, 100%, 50%);
+    margin-left: 35px;
+    margin-right: 15px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.texto-2 {
+    color: hsl(178, 100%, 50%);
+}
+
+.eth {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.eth:hover {
+    text-decoration: underline;
+}
+
+
+.rel {
+    float: right;
+}
+
+.mini-container {
+    width: 300px;
+    padding: 15px;
+    margin: 40px auto 40px;
+   border-bottom: 1px solid hsl(178, 100%, 50%);
+}
+
+.foto {
+    width: 50px;
+    float: left;
+    margin-left: 35px;
+    border: 1px solid hsl(178, 100%, 50%);
+    border-radius: 50%;
+}
+
+.pie {
+    float: left;
+    color: hsl(178, 100%, 50%);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.link:hover {
+    text-decoration: underline;
+}

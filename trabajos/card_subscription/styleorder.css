@@ -1,0 +1,104 @@
+body {
+    background-color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    width: 400px;
+    min-width: 375px;
+    height: 700px;
+    margin: 50px auto 50px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(223, 226, 231, 0.3)
+}
+
+.img-1 {
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+}
+
+.titulo {
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    font-weight: 900;
+}
+
+.texto {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    padding: 20px;
+}
+
+.container-2 {
+    background-color: rgba(223, 226, 231, 0.3);
+    width: 350px;
+    height: 80px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.img-mus {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.cambio {
+    float: right;
+    margin-top: 25px;
+    margin-right: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.texto-p {
+    display: inline;
+    font-weight: normal;
+    color: hsl(224, 23%, 55%);
+
+}
+
+.texto-neg {
+    float: left;
+    margin-left: 40px;
+    margin-top: 17px;
+    font-weight: 900;
+}
+
+.bot {
+    width: 350px;
+    height: 60px;
+    display: inline;
+    float: left;
+    margin-left: 25px;
+    margin-top: 45px;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bot:hover {
+    background-color: #D1E029;
+    color: black;
+    text-decoration: underline;
+}
+
+.bot-2 {
+    display: inline;
+    float: left;
+    margin-top: 30px;
+    margin-left: 150px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+
+.bot-2:hover {
+    text-decoration: underline;
+}

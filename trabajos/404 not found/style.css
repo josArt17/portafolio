@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+
+/* TITULO */
+
+.title {
+    font-family: inconsolata;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25.18px;
+    color: #333333;
+    margin: 20px 0 0 24px;
+}
+
+/* IMAGE */
+.container_img {
+    width: 300px;
+    height: 250px;
+    margin: 64px auto;
+}
+
+.container_img img {
+    width: 100%;
+}
+
+/* TITLE OF PAGE */
+
+.title_2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    color: #333333;
+    margin: 40px 1px 0 24px;
+}
+
+
+/* CONTAINER OF TEXT */
+.cont_text {
+    width: 328px;
+    height: 81px;
+    margin: 30px 24px 0 23px;
+}
+
+
+/* TEXT OF THE PAGE */
+.text {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #4F4F4F;
+}
+
+
+/* BUTTON */
+.btn {
+    width: 216px;
+    height: 68px;
+    background-color: #333333;
+    border: none;
+    margin-left: 24px;
+}
+
+
+/* TEXT OF THE BUTTON */
+.btn_text {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+/* FOOTER */
+
+.fot_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #BDBDBD;
+    margin-top: 114px;
+    text-align: center;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 700px) {
+
+
+    /* TITLE */
+    .title {
+        font-family: inconsolata;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 25px;
+        color: #333333;
+        margin: 40px 0 0 77px;
+    }
+
+    /* CONTAINER OF DE MAIN CONTENT */
+    .cont_min {
+        display: flex;
+        max-width: 900px;
+        margin: auto;
+        align-items: center;
+    }
+
+
+    /* CONTAINER OF IMAGE */
+    .container_img {
+        width: 550px;
+        height: 460px;
+    }
+    
+    /* IMAGE */
+    .container_img img {
+        width: 500px;
+        height: 450px;
+        margin-top: 70px;
+        margin-left: -150px;
+    }
+
+
+    /* CONTAINER OF TITLE */
+    .cont_title {
+        width: 586px;
+        height: 190px;
+    }
+
+    /* TITLE 2 */
+    .title_2 {
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 95px;
+        color: #333333;
+        margin-left: -20px;
+    }
+
+    /* CONTAINER OF TEXT */
+    .cont_text {
+        width: 381px;
+        height: 108px;
+        margin: 36px;
+    }
+    
+    /* TEXT OF PAGE */
+    .text {
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #4F4F4F;
+        margin-left: -45px;
+    }
+
+    /* BUTTON */
+    .btn {
+        width: 216px;
+        height: 68px;
+        background-color: #333333;
+        border: none;
+        margin-left: 24px;
+        margin-left: -7px;
+    }
+    
+    /* TEXT OF THE BUTTON */
+    .btn_text {
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+}

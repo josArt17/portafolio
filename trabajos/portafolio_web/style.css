@@ -1,0 +1,332 @@
+body {
+    background: hsla(47, 100%, 50%, 1);
+
+    background: radial-gradient(circle, hsla(47, 100%, 50%, 1) 0%, hsla(30, 100%, 50%, 1) 100%);
+
+    background: -moz-radial-gradient(circle, hsla(47, 100%, 50%, 1) 0%, hsla(30, 100%, 50%, 1) 100%);
+
+    background: -webkit-radial-gradient(circle, hsla(47, 100%, 50%, 1) 0%, hsla(30, 100%, 50%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDC500", endColorstr="#FF8000", GradientType=1 );
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+/***BARRA DE NAVEGACION***/
+
+.container-1 {
+    max-width: 1200px;
+    height: 140px;
+    background-color: rgba(61, 0, 102, 0.8);
+    margin:25px auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.container-titulo {
+    max-width: 30%;
+    display: inline-block;
+    margin-top: 27px;
+    margin-left: 15px;
+}
+
+.container-titulo h2 {
+    font-weight: 600;
+    color: white;
+    font-size: 30px;
+}
+
+.padre-listas {
+    float: right;
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.listas-1 {
+    list-style: none;
+}
+
+.link-1 {
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    padding: 10px;
+    transition: 0.1s;
+}
+
+.link-1:hover {
+    background-color: #ffd500;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+/***FIN BARRA DE NAVEGACION***/
+
+/***SOBRE MI***/
+
+.sobre-mi {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: -24px auto; 
+    background-color: rgba(231, 236, 239, 0.4);
+}
+
+.container-2 {
+    width: 50%;
+}
+
+.container-2 h3 {
+    font-weight: 300;
+    color: rgb(22, 18, 18);
+    padding: 40px 0;
+    margin-left: 15px;
+}
+
+.container-2 h1 {
+    font-size: 40px;
+    color: #be5f0d;
+    margin-left: 15px;
+}
+
+.container-2 span {
+    color: #5c0099;
+}
+
+.container-2 p {
+    display: inline-block;
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.boton-1 {
+    background-color: #5c0099;
+    padding: 10px 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-1 a {
+    color: white;
+    font-weight: 900;
+}
+.container-img {
+    width: 35%;
+    margin-top: 20px;
+}
+
+.container-img img {
+    border-radius: 50%;
+    box-shadow: 1px 5px 10px 5px rgba(3, 7, 30, 0.3);
+}
+
+/***FIN SOBRE MI***/
+
+/***SERVICIOS***/
+
+.middle {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between; 
+    background-color: rgba(231, 236, 239, 0.4);
+}
+
+.servicios {
+    width: 50%;
+}
+
+.servicios h2 {
+    font-weight: 900;
+    color: #5c0099;
+    text-align: center;
+}
+
+.servicios p {
+    display: block;
+    float: left;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+.container-img2{
+    width: 400px;
+    height: 400px;
+    margin-left: 15px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.container-img2 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+}
+
+.formulario {
+    width: 50%;
+    background-color: rgba(61, 0, 102, 0.5);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.formulario h3 {
+    font-weight: 900;
+    text-align: center;
+    color: white;
+
+}
+
+label,input {
+    display: inline-block;
+    padding: 5px;
+}
+
+label {
+    width: 30%;
+    text-align: right;
+    color: white;
+}
+
+label+input {
+    width: 30%;
+    margin: 45px 30% 0 4%;
+    border-radius: 5px;
+    border: none;
+}
+
+label+input:focus {
+    outline: none;
+}
+
+input+input {
+    float: left;
+    padding: 7px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-weight: 900;
+    background-color: #fdc500;
+    border: none;
+    transition: 0.2s;
+}
+
+input+input:hover {
+    background: green;
+    padding: 7px 20px;
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+}
+
+/***FIN SERVICIOS***/
+
+/***REVIEWS***/
+
+.container-3 {
+    max-width: 1200px;
+    margin: -20px auto;
+    background-color: rgba(231, 236, 239, 0.4);
+}
+
+.container-3 h2 {
+    font-weight: 900;
+    color: #5c0099;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-div {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container-review {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(3, 7, 30, 0.9);
+    border-radius: 5px;
+}
+
+.container-review img {
+    border-radius: 50%;
+    float: left;
+    max-width: 100px;
+    margin-top: 10px;
+    margin-left: 145px;
+}
+
+.container-review h3 {
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.container-review p {
+    display: inline-block;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+/***FIN REVIEWS***/
+
+/***FOOTER***/
+
+.container-4 {
+    max-width: 1200px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 238, 50, 0.8);
+    margin: 20px auto;
+    border-radius: 0 0 5px 5px; 
+}
+
+.container-titulo-2 {
+    max-width: 30%;
+    margin-top: 70px;
+}
+
+.container-titulo-2 h2 {
+    font-weight: 900;
+    font-size: 30px;
+    color: #5c0099;
+}
+
+.container-lis h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: #5c0099;
+}
+
+li {
+    list-style: none;
+    color: #5c0099;
+}
+
+
+a {
+    text-decoration: none;
+    color: #5c0099;
+}
+ 
+.fa-brands:hover {
+    color: white;
+
+}

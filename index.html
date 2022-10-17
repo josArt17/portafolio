@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3bcbb0a983.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Mi portafolio</title>
+</head>
+<body>
+    <!-- INICIO -->
+
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>{ JA }</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li>
+                                <a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a>
+                            </li>
+                            <li>
+                                <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                            </li>
+                            <li>
+                                <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a>
+                            </li>
+                            <li>
+                                <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- MENU RESPONSIVE -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="bi bi-list" style="font-size: 2rem;"></i>
+                    </div>
+
+                    <!-- REDES SOCIALES -->
+                    <div class="redes">
+                        <a href="https://github.com/josArt17" target="_blank"><i class="bi bi-github" style="font-size: 1.3rem"></i></a>
+                        <a href="https://wa.me/message/IQN66L33SGOYM1" target="_blank"><i class="bi bi-whatsapp" style="font-size: 1.3rem"></i></a>
+                        <a href="https://www.linkedin.com/in/jos%C3%A9-angel-arteaga-603272241/" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.3rem"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">
+                    Bienvenidos
+                </p>
+                <h2>Soy <span>Jose Angel Arteaga</span>, desarrollador WEB</h2>
+                <p class="descripcion">
+                    Me he estado preparando en los ultimos meses con los conocimientos del desarrollo web, comenzando desde HTML hasta llegar a utilizar librerias como React o Laravel, aprendiendo y aplicando buenas practicas como el responsive design, el uso de herramientas como Git o GitHub, siempre procurando adaptar los diseños para poder ser visualizados en cualquier dispositivo.
+                </p>
+                <a href="#portfolio" class="btn btn-outline-danger"> Ir a portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola, soy <span>Jose Angel Arteaga</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Me estoy preparando para poder llegar a ser un Fullstack, tengo conocimientos en maquetacion web, responsive design, manejo de bases de datos, lenguajes en el backend, a demas de uso de librerias y frameworks</p>
+            <a href="./cv/José_Angel_Arteaga_-_Full_Stack_Web_Developer.pdf" target="_blank" class="btn btn-outline-dark">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+
+    <section id="servicios">
+        <h3 class="titulo-seccion">
+            MIS SERVICIOS
+        </h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-html5"></i></span>
+                <h4>Diseño de sitios WEB</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                </ul>
+                <p>Diseño para diferentes sitios web, de servicios profesionales, de informacion, o meramente de contacto</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Administracion de base de datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>MySQL</li>
+                    <li>MariaDB</li>
+                </ul>
+                <p>Manejo de base de datos e incorporacion en sitios Web</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-bootstrap"></i></span>
+                <h4>Actualizacion de componentes Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>BOOTSTRAP</li>
+                </ul>
+                <p>incorporacion de nuevas tecnologias en sitios Web, actualizacion en diseño y en funcionalidad</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span><i class="fa-brands fa-html5" style="color: #E54C21;"></i> - <i class="fa-brands fa-css3-alt" style="color: #5B7AEC;"></i> HTML & CSS</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span><i class="fa-brands fa-js" style="color: #F7E018;"></i> JavaScript</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span><i class="fa-brands fa-bootstrap" style="color: #7107f3;"></i> Bootstrap</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="bootstrap" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span><i class="fa-brands fa-php" style="color: #787cb4;"></i> PHP</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="php" class="barra-progreso4"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span><i class="fa-solid fa-database" style="color: #e58f00;"></i> Base de datos</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso5"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span><i class="fa-brands fa-react" style="color: #61dbfb;"></i> React</p>
+                <span class="porcentaje">10%</span>
+            </div>
+            <div class="barra">
+                <div id="react" class="barra-progreso6"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span><i class="fa-brands fa-laravel" style="color: #ff291a;"></i> Laravel</p>
+                <span class="porcentaje">10%</span>
+            </div>
+            <div class="barra">
+                <div id="laravel" class="barra-progreso7"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTAFOLIO -->
+
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/tarjeta.png" alt="">
+                <div class="info">
+                    <h4>Formulario de registro</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #5B7AEC; font-size: 1rem;"></i>
+                    <a href="./trabajos/tarjeta_subscripcion/tarjeta2.html" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/nft.png" alt="">
+                <div class="info">
+                    <h4>Tarjeta NFT</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #5B7AEC; font-size: 1rem;"></i>
+                    <a href="./trabajos/nft_card/indexnft.html" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/contactanos.png" alt="">
+                <div class="info">
+                    <h4>Formulario de contacto</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #5B7AEC; font-size: 1rem;"></i>
+                    <a href="./trabajos/tarjeta_contacto/index.html" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/portafolio.png" alt="">
+                <div class="info">
+                    <h4>Portafolio</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #5B7AEC; font-size: 1rem;"></i>
+                    <a href="./trabajos/portafolio_web/" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/maquetado.png" alt="">
+                <div class="info">
+                    <h4>Portafolio maquetado</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #5B7AEC; font-size: 1rem;"></i>
+                    <a href="./trabajos/maquetado_web/index.html" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/grid.png" alt="">
+                <div class="info">
+                    <h4>Mi negocio</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #5B7AEC; font-size: 1rem;"></i>
+                    <a href="./trabajos/pagina_web_grid/index.html" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/404.png" alt="">
+                <div class="info">
+                    <h4>404 not found</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #5B7AEC; font-size: 1rem;"></i>
+                    <a href="./trabajos/404 not found/index.html" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                    
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/json.png" alt="">
+                <div class="info">
+                    <h4>Consumo de JSON</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-js" style="color: #F7E018; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-bootstrap" style="color: #7107f3; font-size: 1rem;"></i>
+                    <a href="./trabajos/JSON/index.html" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/bootstrap.png" alt="">
+                <div class="info">
+                    <h4>Formulario registro de horas</h4>
+                    <i class="fa-brands fa-html5" style="color: #E54C21; font-size: 1rem;"></i>
+                    <i class="fa-brands fa-bootstrap" style="color: #7107f3; font-size: 1rem;"></i>
+                    <a href="./trabajos/bootstrap/horas_de_servicio.html" target="_blank" class="btn btn-primary m-2">Abrir</a>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+   
+<!-- CONTACTO -->
+
+    <section id="contacto">
+    <h3 class="titulo-seccion">
+        Contactanos ahora
+    </h3>
+    <div class="contenedor-form">
+        <form action="mailto:josart1296@gmail.com">
+            <div class="fila-mitad">
+                
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Nombre cpmpleto" aria-describedby="basic-addon1" required="">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" required="">
+                </div>
+
+                <div class="fila">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-card-text"></i></span>
+                        <input type="text" class="form-control" placeholder="Tema" aria-label="Tema" aria-describedby="basic-addon1" required="">
+                    </div>
+                </div>
+
+                <div class="fila">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-blockquote-left"></i></span>
+                        <textarea type="text" class="form-control" placeholder="Mensaje" aria-label="Mensaje" aria-describedby="basic-addon1" required=""></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" class="btn btn-success" value="Enviar mensaje">
+        
+            </div>
+        </form>
+    </div>
+    </section>
+
+<!-- FOOTER -->
+
+    <footer class="contenedor-footer">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2022, Todos los derechos reservados.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="https://github.com/josArt17" target="_blank"><i class="bi bi-github" style="font-size: 1.3rem"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://wa.me/message/IQN66L33SGOYM1" target="_blank"><i class="bi bi-whatsapp" style="font-size: 1.3rem"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://www.linkedin.com/in/jos%C3%A9-angel-arteaga-603272241/" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.3rem"></i></a></li>
+            </ul>
+          </div>
+    </footer>
+    
+
+
+
+   
+    
+    
+    
+    
+    <script src="./main.js"></script> 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

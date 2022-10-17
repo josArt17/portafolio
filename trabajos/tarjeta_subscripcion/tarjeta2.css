@@ -1,0 +1,107 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: hsla(0, 100%, 74%, 1);
+
+background: linear-gradient(180deg, hsla(0, 100%, 74%, 1) 30%, hsla(63, 90%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(0, 100%, 74%, 1) 30%, hsla(63, 90%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(0, 100%, 74%, 1) 30%, hsla(63, 90%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF7978", endColorstr="#F3F98A", GradientType=1 );
+}
+
+.container {
+    width: 350px;
+    height: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.boton1 {
+    background-color: #5D54A3;
+    width: 320px;
+    padding: 12px;
+    display: inline;
+    margin: 20px 15px 10px 15px;
+    color: white;
+    line-height: 22px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 5px rgba(155, 150, 157, 0.9);
+}
+
+.boton1:hover {
+    background-color: #49417F;
+    width: 320px;
+    padding: 12px;
+    display: inline;
+    margin: 20px 15px 10px 15px;
+    color: white;
+    line-height: 22px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 5px rgba(155, 150, 157, 0.0);
+}
+
+.caja2 {
+    width: 320px;
+    height: 450px;
+    background-color: white;
+    border-radius: 7px;
+    margin: 20px 15px 10px 15px;
+}
+
+.control {
+    padding: 15px;
+    margin: 20px 15px 0 15px;
+    width: 255px;
+    border: 1px solid rgb(209, 202, 202);
+    border-radius: 5px;
+
+}
+
+.boton {
+    padding: 15px;
+    width: 290px;
+    margin: 30px 15px 10px 15px;
+    background-color: #37CC8A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 1px rgba(60, 189, 133, 0.7);
+}
+
+.boton:hover {
+    background-color: #2AA26C;
+    box-shadow: none;
+}
+
+.pie {
+    font-size: 12px;
+    text-align: center;
+    display: inherit;
+    margin-top: 20px;
+    color: grey;
+    line-height: 22px;
+}
+
+.neg {
+text-decoration: none;
+color: #DA8686;
+font-weight: bold;
+}
+
+.neg:hover {
+    text-decoration: underline;
+}
